@@ -44,6 +44,7 @@ int search(int* array, int target, int length) {
       if (leftover > 0 && i == children - 1) {
         for (j = (index * size); j < ((index * size) + leftover); j++) {
           if (array[j] == target) {
+            printf("Found in the child process\n");
             return j;
           }
         }
@@ -51,6 +52,7 @@ int search(int* array, int target, int length) {
       else {
         for (j = (index * size); j < ((index + 1) * size); j++) {
           if (array[j] == target) {
+            printf("Found in the child process\n");
             return j;
           }
         }
@@ -58,5 +60,6 @@ int search(int* array, int target, int length) {
     }
   }
 
+  printf("Target not found\n");
   return -1;
 }
