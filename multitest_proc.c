@@ -5,7 +5,7 @@
 #include <unistd.h>
 #include <sys/types.h>
 
-int searchArr(int* array, int target, int length) {
+int search(int* array, int target, int length) {
   int processes = 0;
   int size = 0;
   if (length > 250) {
