@@ -2,7 +2,7 @@ FLAGC = -c
 FLAGO = -o
 
 all:
-	$(error hhhhh)
+	$(error error)
 
 proc: multitest_proc.c multitest.h
 	gcc $(FLAGC) multitest_proc.c
